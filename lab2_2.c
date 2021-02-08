@@ -9,17 +9,45 @@ int main()
 
     if(a<b&&a<c)
     {
-        A=a;
+        printf("A");
         if(b<c)
-            B=b;
+            printf("B");
         else if(b>c){
-            B=c;
+            printf("C");
             k=1;
         }
         if(k==1)
-            C=b;
+            printf("B");
         else
-            C=c;
+            printf("C");
+    }
+    else if(b<a&&b<c)
+    {
+        printf("A");
+        if(a<c)
+            printf("B");
+        else if(a>c){
+            printf("C");
+            k=1;
+        }
+        if(k==1)
+            printf("B");
+        else
+            printf("C");
+    }
+    if(c<b&&c<a)
+    {
+        printf("A");
+        if(b<a)
+            printf("B");
+        else if(b>a){
+            printf("C");
+            k=1;
+        }
+        if(k==1)
+            printf("B");
+        else
+            printf("C");
     }
 
 
