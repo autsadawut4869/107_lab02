@@ -11,11 +11,10 @@ int main()
     y=strlen(s);
     for(i=y;i>0;i--){
         a[i]=input%10;
-        printf("%d ",a[i]);
         input=input/10;
 
     }
- /*   for(i=0;i<k;i++){
+   for(i=y;i>0;i--){
         if(a[i]==0){
             printf("Zero");
             if(a[i+1]!= '\0')
@@ -68,7 +67,7 @@ int main()
         }
     }
 
-*/
+
 
 
     return 0;
