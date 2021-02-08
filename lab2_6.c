@@ -2,7 +2,7 @@
 #include <string.h>
 int main()
 {
-    long long int input,a[50],x,c=0,y;
+    long long int input,a[500],x,c=0,y;
     int i;
     char s[30]={'\0'};
     scanf("%lld", &input);
@@ -16,7 +16,7 @@ int main()
    for(i=0;i<=y;i++){
         if(a[i]==0){
             printf("Zero");
-            if(a[i+1]!= '\0')
+            if(a[i+1]!='\0')
                 printf("-");
         }
         else if(a[i]==1){
@@ -26,12 +26,12 @@ int main()
         }
         else if(a[i]==2){
             printf("Two");
-            if(a[i+1]!= '\0')
+            if(a[i+1]!='\0')
                 printf("-");
         }
         else if(a[i]==3){
             printf("Three");
-            if(a[i+1]!= '\0')
+            if(a[i+1]!='\0')
                 printf("-");
         }
         else if(a[i]==4){
