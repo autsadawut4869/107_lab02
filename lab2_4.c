@@ -1,55 +1,74 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    int a;
-    char A;
-    scanf("%c %d",&A,&a);
-    if(A>=65&&A<=90&&a>=1&&a<=31)
-    {
-        if(a%2!=0)
-        {
-            if(A>=65&&A<=73)
-            {
-                if(a%5==0)
-                    printf("%c",92);
-                printf("(^_^)");
-                if(a%5==0)
-                    printf("%c",47);
-            }
-            else if(A>=74&&A<=82)
-            {
-                if(a%5==0)
-                    printf("%c",92);
-                printf("(*o*)");
-                if(a%5==0)
-                    printf("%c",47);
-            }
-            else if(A>=83&&A<=90)
-            {
-                if(a%5==0)
-                    printf("%c",92);
-                printf("(T_T)");
-                if(a%5==0)
-                    printf("%c",47);
-            }
+    long long int input,a[]={},x,k=1,c=0;
+    int i;
+    char s[20]={};
+    scanf("%d", &input);
+    sprintf(s, "%d",input);
+    printf("%d",strlen(s));
+/*    for(i=0;strlen(s)==NULL; i++){
+        x=input%10;
+        a[i]=x;
+        x=x/10;
+        k++;
+        printf("%d",a[i]);
+    }
+    for(i=0;i<k;i++){
+        if(a[i]==0){
+            printf("Zero");
+            if(a[i+1]!= '\0')
+                printf("-");
         }
-        else if(a%2==0)
-        {
-            if(A>=65&&A<=73)
-            {
-                printf("{@_@}");
-            }
-            else if(A>=74&&A<=82)
-            {
-                printf("{*v*}");
-            }
-            else if(A>=83&&A<=90)
-            {
-                printf("{x_x}");
-            }
+        else if(a[i]==1){
+            printf("One");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==2){
+            printf("Two");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==3){
+            printf("Three");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==4){
+            printf("Four");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==5){
+            printf("Five");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==6){
+            printf("Six");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==7){
+            printf("Seven");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==8){
+            printf("Eight");
+            if(a[i+1]!= '\0')
+                printf("-");
+        }
+        else if(a[i]==9){
+            printf("Nine");
+            if(a[i+1]!= '\0')
+                printf("-");
         }
     }
 
+*/
 
 
     return 0;
