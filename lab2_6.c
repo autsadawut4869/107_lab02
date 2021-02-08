@@ -14,7 +14,7 @@ int main()
         a[i]=x;
         input=input/10;
     }
-   for(i=0;i<=y;i++){
+   for(i=0;i<y;i++){
         if(a[i]==0){
             printf("Zero");
             if(a[i+1]!= '\0')
