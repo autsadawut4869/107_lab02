@@ -2,19 +2,18 @@
 #include <string.h>
 int main()
 {
-    long long int input,a[]={},x,c=0,y;
+    long long int input,a[50],x,c=0,y;
     int i;
     char s[30]={'\0'};
     scanf("%lld", &input);
     sprintf(s, "%lld",input);
-    fflush(stdin);
     y=strlen(s);
     for(i=y;i>0;i--){
         x=input%10;
         a[i]=x;
         input=input/10;
     }
-   for(i=0;i<y;i++){
+   for(i=0;i<=y;i++){
         if(a[i]==0){
             printf("Zero");
             if(a[i+1]!= '\0')
@@ -66,8 +65,6 @@ int main()
                 printf("-");
         }
     }
-
-
 
 
     return 0;
