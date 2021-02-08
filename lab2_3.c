@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
     int a;
@@ -33,7 +32,7 @@ int main()
                 printf("%c",47);
         }
     }
-    if(a%2==0)
+    else if(a%2==0)
     {
         if(A>=65&&A<=73)
         {
