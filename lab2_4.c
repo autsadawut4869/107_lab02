@@ -2,20 +2,20 @@
 #include <string.h>
 int main()
 {
-    long long int input,a[]={},x,k=1,c=0;
+    long long int input,a[]={0},x,c=0,y;
     int i;
-    char s[20]={};
-    scanf("%d", &input);
-    sprintf(s, "%d",input);
-    printf("%d",strlen(s));
-/*    for(i=0;strlen(s)==NULL; i++){
-        x=input%10;
-        a[i]=x;
-        x=x/10;
-        k++;
-        printf("%d",a[i]);
+    char s[30]={'\0'};
+    scanf("%lld", &input);
+    sprintf(s, "%lld",input);
+    fflush(stdin);
+    y=strlen(s);
+    for(i=y;i>0;i--){
+        a[i]=input%10;
+        printf("%d ",a[i]);
+        input=input/10;
+
     }
-    for(i=0;i<k;i++){
+ /*   for(i=0;i<k;i++){
         if(a[i]==0){
             printf("Zero");
             if(a[i+1]!= '\0')
